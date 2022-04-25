@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66C5860F281695E2001DAA2E /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5860E281695E2001DAA2E /* InputView.swift */; };
+		66C5861128169651001DAA2E /* ProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5861028169651001DAA2E /* ProcessView.swift */; };
+		66C586132816B410001DAA2E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C586122816B410001DAA2E /* SettingsView.swift */; };
 		66F4B4B0280E1A580065DF35 /* Object_CaptureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F4B4AF280E1A580065DF35 /* Object_CaptureApp.swift */; };
 		66F4B4B2280E1A580065DF35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F4B4B1280E1A580065DF35 /* ContentView.swift */; };
 		66F4B4B4280E1A590065DF35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F4B4B3280E1A590065DF35 /* Assets.xcassets */; };
@@ -14,6 +17,7 @@
 		66F4B4C2280E1A590065DF35 /* Object_CaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F4B4C1280E1A590065DF35 /* Object_CaptureTests.swift */; };
 		66F4B4CC280E1A590065DF35 /* Object_CaptureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F4B4CB280E1A590065DF35 /* Object_CaptureUITests.swift */; };
 		66F4B4CE280E1A590065DF35 /* Object_CaptureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F4B4CD280E1A590065DF35 /* Object_CaptureUITestsLaunchTests.swift */; };
+		66F4B4DB280E3B3F0065DF35 /* PhotoGrammetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F4B4DA280E3B3F0065DF35 /* PhotoGrammetry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		66C5860E281695E2001DAA2E /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		66C5861028169651001DAA2E /* ProcessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessView.swift; sourceTree = "<group>"; };
+		66C586122816B410001DAA2E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		66F4B4AC280E1A580065DF35 /* Object Capture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Object Capture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F4B4AF280E1A580065DF35 /* Object_CaptureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object_CaptureApp.swift; sourceTree = "<group>"; };
 		66F4B4B1280E1A580065DF35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +52,7 @@
 		66F4B4C7280E1A590065DF35 /* Object CaptureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Object CaptureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F4B4CB280E1A590065DF35 /* Object_CaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object_CaptureUITests.swift; sourceTree = "<group>"; };
 		66F4B4CD280E1A590065DF35 /* Object_CaptureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object_CaptureUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		66F4B4DA280E3B3F0065DF35 /* PhotoGrammetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGrammetry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,10 @@
 			children = (
 				66F4B4AF280E1A580065DF35 /* Object_CaptureApp.swift */,
 				66F4B4B1280E1A580065DF35 /* ContentView.swift */,
+				66C5861028169651001DAA2E /* ProcessView.swift */,
+				66C5860E281695E2001DAA2E /* InputView.swift */,
+				66C586122816B410001DAA2E /* SettingsView.swift */,
+				66F4B4DA280E3B3F0065DF35 /* PhotoGrammetry.swift */,
 				66F4B4B3280E1A590065DF35 /* Assets.xcassets */,
 				66F4B4B8280E1A590065DF35 /* Object_Capture.entitlements */,
 				66F4B4B5280E1A590065DF35 /* Preview Content */,
@@ -260,6 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				66F4B4B2280E1A580065DF35 /* ContentView.swift in Sources */,
+				66C5861128169651001DAA2E /* ProcessView.swift in Sources */,
+				66C5860F281695E2001DAA2E /* InputView.swift in Sources */,
+				66C586132816B410001DAA2E /* SettingsView.swift in Sources */,
+				66F4B4DB280E3B3F0065DF35 /* PhotoGrammetry.swift in Sources */,
 				66F4B4B0280E1A580065DF35 /* Object_CaptureApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +440,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,6 +468,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
