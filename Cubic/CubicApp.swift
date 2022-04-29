@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Object_CaptureApp: App {
+struct CubicApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

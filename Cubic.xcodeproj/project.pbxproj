@@ -10,13 +10,13 @@
 		66C5860F281695E2001DAA2E /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5860E281695E2001DAA2E /* InputView.swift */; };
 		66C5861128169651001DAA2E /* ProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5861028169651001DAA2E /* ProcessView.swift */; };
 		66C586132816B410001DAA2E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C586122816B410001DAA2E /* SettingsView.swift */; };
-		66F4B4B0280E1A580065DF35 /* Object_CaptureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F4B4AF280E1A580065DF35 /* Object_CaptureApp.swift */; };
+		66F4B4B0280E1A580065DF35 /* CubicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F4B4AF280E1A580065DF35 /* CubicApp.swift */; };
 		66F4B4B2280E1A580065DF35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F4B4B1280E1A580065DF35 /* ContentView.swift */; };
 		66F4B4B4280E1A590065DF35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F4B4B3280E1A590065DF35 /* Assets.xcassets */; };
 		66F4B4B7280E1A590065DF35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F4B4B6280E1A590065DF35 /* Preview Assets.xcassets */; };
-		66F4B4C2280E1A590065DF35 /* Object_CaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F4B4C1280E1A590065DF35 /* Object_CaptureTests.swift */; };
-		66F4B4CC280E1A590065DF35 /* Object_CaptureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F4B4CB280E1A590065DF35 /* Object_CaptureUITests.swift */; };
-		66F4B4CE280E1A590065DF35 /* Object_CaptureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F4B4CD280E1A590065DF35 /* Object_CaptureUITestsLaunchTests.swift */; };
+		66F4B4C2280E1A590065DF35 /* CubicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F4B4C1280E1A590065DF35 /* CubicTests.swift */; };
+		66F4B4CC280E1A590065DF35 /* CubicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F4B4CB280E1A590065DF35 /* CubicUITests.swift */; };
+		66F4B4CE280E1A590065DF35 /* CubicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F4B4CD280E1A590065DF35 /* CubicUITestsLaunchTests.swift */; };
 		66F4B4DB280E3B3F0065DF35 /* PhotoGrammetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F4B4DA280E3B3F0065DF35 /* PhotoGrammetry.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,17 +41,17 @@
 		66C5860E281695E2001DAA2E /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		66C5861028169651001DAA2E /* ProcessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessView.swift; sourceTree = "<group>"; };
 		66C586122816B410001DAA2E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		66F4B4AC280E1A580065DF35 /* Object Capture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Object Capture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		66F4B4AF280E1A580065DF35 /* Object_CaptureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object_CaptureApp.swift; sourceTree = "<group>"; };
+		66F4B4AC280E1A580065DF35 /* Cubic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cubic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F4B4AF280E1A580065DF35 /* CubicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubicApp.swift; sourceTree = "<group>"; };
 		66F4B4B1280E1A580065DF35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		66F4B4B3280E1A590065DF35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66F4B4B6280E1A590065DF35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		66F4B4B8280E1A590065DF35 /* Object_Capture.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Object_Capture.entitlements; sourceTree = "<group>"; };
-		66F4B4BD280E1A590065DF35 /* Object CaptureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Object CaptureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		66F4B4C1280E1A590065DF35 /* Object_CaptureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object_CaptureTests.swift; sourceTree = "<group>"; };
-		66F4B4C7280E1A590065DF35 /* Object CaptureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Object CaptureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		66F4B4CB280E1A590065DF35 /* Object_CaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object_CaptureUITests.swift; sourceTree = "<group>"; };
-		66F4B4CD280E1A590065DF35 /* Object_CaptureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object_CaptureUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		66F4B4B8280E1A590065DF35 /* Cubic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cubic.entitlements; sourceTree = "<group>"; };
+		66F4B4BD280E1A590065DF35 /* CubicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CubicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F4B4C1280E1A590065DF35 /* CubicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubicTests.swift; sourceTree = "<group>"; };
+		66F4B4C7280E1A590065DF35 /* CubicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CubicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F4B4CB280E1A590065DF35 /* CubicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubicUITests.swift; sourceTree = "<group>"; };
+		66F4B4CD280E1A590065DF35 /* CubicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubicUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		66F4B4DA280E3B3F0065DF35 /* PhotoGrammetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGrammetry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,9 +83,9 @@
 		66F4B4A3280E1A580065DF35 = {
 			isa = PBXGroup;
 			children = (
-				66F4B4AE280E1A580065DF35 /* Object Capture */,
-				66F4B4C0280E1A590065DF35 /* Object CaptureTests */,
-				66F4B4CA280E1A590065DF35 /* Object CaptureUITests */,
+				66F4B4AE280E1A580065DF35 /* Cubic */,
+				66F4B4C0280E1A590065DF35 /* CubicTests */,
+				66F4B4CA280E1A590065DF35 /* CubicUITests */,
 				66F4B4AD280E1A580065DF35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,27 +93,27 @@
 		66F4B4AD280E1A580065DF35 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66F4B4AC280E1A580065DF35 /* Object Capture.app */,
-				66F4B4BD280E1A590065DF35 /* Object CaptureTests.xctest */,
-				66F4B4C7280E1A590065DF35 /* Object CaptureUITests.xctest */,
+				66F4B4AC280E1A580065DF35 /* Cubic.app */,
+				66F4B4BD280E1A590065DF35 /* CubicTests.xctest */,
+				66F4B4C7280E1A590065DF35 /* CubicUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		66F4B4AE280E1A580065DF35 /* Object Capture */ = {
+		66F4B4AE280E1A580065DF35 /* Cubic */ = {
 			isa = PBXGroup;
 			children = (
-				66F4B4AF280E1A580065DF35 /* Object_CaptureApp.swift */,
-				66F4B4B1280E1A580065DF35 /* ContentView.swift */,
+				66F4B4AF280E1A580065DF35 /* CubicApp.swift */,
 				66C5861028169651001DAA2E /* ProcessView.swift */,
 				66C5860E281695E2001DAA2E /* InputView.swift */,
 				66C586122816B410001DAA2E /* SettingsView.swift */,
+				66F4B4B1280E1A580065DF35 /* ContentView.swift */,
 				66F4B4DA280E3B3F0065DF35 /* PhotoGrammetry.swift */,
 				66F4B4B3280E1A590065DF35 /* Assets.xcassets */,
-				66F4B4B8280E1A590065DF35 /* Object_Capture.entitlements */,
+				66F4B4B8280E1A590065DF35 /* Cubic.entitlements */,
 				66F4B4B5280E1A590065DF35 /* Preview Content */,
 			);
-			path = "Object Capture";
+			path = Cubic;
 			sourceTree = "<group>";
 		};
 		66F4B4B5280E1A590065DF35 /* Preview Content */ = {
@@ -124,29 +124,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		66F4B4C0280E1A590065DF35 /* Object CaptureTests */ = {
+		66F4B4C0280E1A590065DF35 /* CubicTests */ = {
 			isa = PBXGroup;
 			children = (
-				66F4B4C1280E1A590065DF35 /* Object_CaptureTests.swift */,
+				66F4B4C1280E1A590065DF35 /* CubicTests.swift */,
 			);
-			path = "Object CaptureTests";
+			path = CubicTests;
 			sourceTree = "<group>";
 		};
-		66F4B4CA280E1A590065DF35 /* Object CaptureUITests */ = {
+		66F4B4CA280E1A590065DF35 /* CubicUITests */ = {
 			isa = PBXGroup;
 			children = (
-				66F4B4CB280E1A590065DF35 /* Object_CaptureUITests.swift */,
-				66F4B4CD280E1A590065DF35 /* Object_CaptureUITestsLaunchTests.swift */,
+				66F4B4CB280E1A590065DF35 /* CubicUITests.swift */,
+				66F4B4CD280E1A590065DF35 /* CubicUITestsLaunchTests.swift */,
 			);
-			path = "Object CaptureUITests";
+			path = CubicUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		66F4B4AB280E1A580065DF35 /* Object Capture */ = {
+		66F4B4AB280E1A580065DF35 /* Cubic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66F4B4D1280E1A590065DF35 /* Build configuration list for PBXNativeTarget "Object Capture" */;
+			buildConfigurationList = 66F4B4D1280E1A590065DF35 /* Build configuration list for PBXNativeTarget "Cubic" */;
 			buildPhases = (
 				66F4B4A8280E1A580065DF35 /* Sources */,
 				66F4B4A9280E1A580065DF35 /* Frameworks */,
@@ -156,14 +156,14 @@
 			);
 			dependencies = (
 			);
-			name = "Object Capture";
+			name = Cubic;
 			productName = "Object Capture";
-			productReference = 66F4B4AC280E1A580065DF35 /* Object Capture.app */;
+			productReference = 66F4B4AC280E1A580065DF35 /* Cubic.app */;
 			productType = "com.apple.product-type.application";
 		};
-		66F4B4BC280E1A590065DF35 /* Object CaptureTests */ = {
+		66F4B4BC280E1A590065DF35 /* CubicTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66F4B4D4280E1A590065DF35 /* Build configuration list for PBXNativeTarget "Object CaptureTests" */;
+			buildConfigurationList = 66F4B4D4280E1A590065DF35 /* Build configuration list for PBXNativeTarget "CubicTests" */;
 			buildPhases = (
 				66F4B4B9280E1A590065DF35 /* Sources */,
 				66F4B4BA280E1A590065DF35 /* Frameworks */,
@@ -174,14 +174,14 @@
 			dependencies = (
 				66F4B4BF280E1A590065DF35 /* PBXTargetDependency */,
 			);
-			name = "Object CaptureTests";
+			name = CubicTests;
 			productName = "Object CaptureTests";
-			productReference = 66F4B4BD280E1A590065DF35 /* Object CaptureTests.xctest */;
+			productReference = 66F4B4BD280E1A590065DF35 /* CubicTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		66F4B4C6280E1A590065DF35 /* Object CaptureUITests */ = {
+		66F4B4C6280E1A590065DF35 /* CubicUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66F4B4D7280E1A590065DF35 /* Build configuration list for PBXNativeTarget "Object CaptureUITests" */;
+			buildConfigurationList = 66F4B4D7280E1A590065DF35 /* Build configuration list for PBXNativeTarget "CubicUITests" */;
 			buildPhases = (
 				66F4B4C3280E1A590065DF35 /* Sources */,
 				66F4B4C4280E1A590065DF35 /* Frameworks */,
@@ -192,9 +192,9 @@
 			dependencies = (
 				66F4B4C9280E1A590065DF35 /* PBXTargetDependency */,
 			);
-			name = "Object CaptureUITests";
+			name = CubicUITests;
 			productName = "Object CaptureUITests";
-			productReference = 66F4B4C7280E1A590065DF35 /* Object CaptureUITests.xctest */;
+			productReference = 66F4B4C7280E1A590065DF35 /* CubicUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -220,7 +220,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 66F4B4A7280E1A580065DF35 /* Build configuration list for PBXProject "Object Capture" */;
+			buildConfigurationList = 66F4B4A7280E1A580065DF35 /* Build configuration list for PBXProject "Cubic" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -233,9 +233,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66F4B4AB280E1A580065DF35 /* Object Capture */,
-				66F4B4BC280E1A590065DF35 /* Object CaptureTests */,
-				66F4B4C6280E1A590065DF35 /* Object CaptureUITests */,
+				66F4B4AB280E1A580065DF35 /* Cubic */,
+				66F4B4BC280E1A590065DF35 /* CubicTests */,
+				66F4B4C6280E1A590065DF35 /* CubicUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -276,7 +276,7 @@
 				66C5860F281695E2001DAA2E /* InputView.swift in Sources */,
 				66C586132816B410001DAA2E /* SettingsView.swift in Sources */,
 				66F4B4DB280E3B3F0065DF35 /* PhotoGrammetry.swift in Sources */,
-				66F4B4B0280E1A580065DF35 /* Object_CaptureApp.swift in Sources */,
+				66F4B4B0280E1A580065DF35 /* CubicApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66F4B4C2280E1A590065DF35 /* Object_CaptureTests.swift in Sources */,
+				66F4B4C2280E1A590065DF35 /* CubicTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66F4B4CE280E1A590065DF35 /* Object_CaptureUITestsLaunchTests.swift in Sources */,
-				66F4B4CC280E1A590065DF35 /* Object_CaptureUITests.swift in Sources */,
+				66F4B4CE280E1A590065DF35 /* CubicUITestsLaunchTests.swift in Sources */,
+				66F4B4CC280E1A590065DF35 /* CubicUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,12 +302,12 @@
 /* Begin PBXTargetDependency section */
 		66F4B4BF280E1A590065DF35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 66F4B4AB280E1A580065DF35 /* Object Capture */;
+			target = 66F4B4AB280E1A580065DF35 /* Cubic */;
 			targetProxy = 66F4B4BE280E1A590065DF35 /* PBXContainerItemProxy */;
 		};
 		66F4B4C9280E1A590065DF35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 66F4B4AB280E1A580065DF35 /* Object Capture */;
+			target = 66F4B4AB280E1A580065DF35 /* Cubic */;
 			targetProxy = 66F4B4C8280E1A590065DF35 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -431,12 +431,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Object Capture/Object_Capture.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Cubic/Cubic.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = "Beta 1.1";
-				DEVELOPMENT_ASSET_PATHS = "\"Object Capture/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Cubic/Preview Content\"";
 				DEVELOPMENT_TEAM = BY379PA9L6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -461,12 +461,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Object Capture/Object_Capture.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Cubic/Cubic.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = "Beta 1.1";
-				DEVELOPMENT_ASSET_PATHS = "\"Object Capture/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Cubic/Preview Content\"";
 				DEVELOPMENT_TEAM = BY379PA9L6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -501,7 +501,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Object Capture.app/Contents/MacOS/Object Capture";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cubic.app/Contents/MacOS/Cubic";
 			};
 			name = Debug;
 		};
@@ -520,7 +520,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Object Capture.app/Contents/MacOS/Object Capture";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cubic.app/Contents/MacOS/Cubic";
 			};
 			name = Release;
 		};
@@ -561,7 +561,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		66F4B4A7280E1A580065DF35 /* Build configuration list for PBXProject "Object Capture" */ = {
+		66F4B4A7280E1A580065DF35 /* Build configuration list for PBXProject "Cubic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66F4B4CF280E1A590065DF35 /* Debug */,
@@ -570,7 +570,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66F4B4D1280E1A590065DF35 /* Build configuration list for PBXNativeTarget "Object Capture" */ = {
+		66F4B4D1280E1A590065DF35 /* Build configuration list for PBXNativeTarget "Cubic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66F4B4D2280E1A590065DF35 /* Debug */,
@@ -579,7 +579,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66F4B4D4280E1A590065DF35 /* Build configuration list for PBXNativeTarget "Object CaptureTests" */ = {
+		66F4B4D4280E1A590065DF35 /* Build configuration list for PBXNativeTarget "CubicTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66F4B4D5280E1A590065DF35 /* Debug */,
@@ -588,7 +588,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66F4B4D7280E1A590065DF35 /* Build configuration list for PBXNativeTarget "Object CaptureUITests" */ = {
+		66F4B4D7280E1A590065DF35 /* Build configuration list for PBXNativeTarget "CubicUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66F4B4D8280E1A590065DF35 /* Debug */,
