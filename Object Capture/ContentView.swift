@@ -15,18 +15,20 @@ enum Views {
 struct ContentView: View {
     
     @State var path : URL?
+    @State var outputPath : URL?
     @State var currentView = Views.InputView
     @State var session : PhotogrammetrySession?
     @State var quality = "Full"
     @State var filename = "Model"
+    @State var format = ".usdz"
     
     var body: some View {
         if currentView == Views.InputView {
-            InputView(currentView: $currentView, path: $path, session: $session, selectedQuality: $quality, filename: $filename)
+            InputView(currentView: $currentView, path: $path, outputPath: $outputPath, session: $session, selectedQuality: $quality, filename: $filename, format: $format)
         } else if currentView == Views.Process {
-            ProcessView(currentView: $currentView, session: session!, quality: quality, filename: filename)
+            ProcessView(currentView: $currentView, session: session!, quality: quality, filename: filename, outputPath: outputPath)
         } else {
-            InputView(currentView: $currentView, path: $path, session: $session, selectedQuality: $quality, filename: $filename)
+            InputView(currentView: $currentView, path: $path, outputPath: $outputPath, session: $session, selectedQuality: $quality, filename: $filename, format: $format)
         }
     }
 }

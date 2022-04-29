@@ -40,12 +40,15 @@ func createConfig(sensitivity: String, ordering: String, enableMasking: Bool) ->
 struct InputView: View {
     
     var qualities = ["Preview", "Reduced", "Medium", "Full", "Raw"]
+    var formats = [".usdz", ".obj"]
     
     @Binding var currentView : Views
     @Binding var path : URL?
+    @Binding var outputPath : URL?
     @Binding var session : PhotogrammetrySession?
     @Binding var selectedQuality : String
     @Binding var filename : String
+    @Binding var format : String
     
     @State private var errorMsg : String?
     @State private var hardwareCheck : Bool?
@@ -53,10 +56,26 @@ struct InputView: View {
     @State private var showFileChooser = false
     @State private var showingAlert = false
     @State private var showingPopover = false
+    @State private var disableDestinationSelect = false
+    @State private var highlightDestinationSelect = false
     
     @State private var sensitivity = "Normal"
     @State private var ordering = "Unordered"
     @State private var enableMasking = true
+    
+    func goProcess() {
+        if(format != ".obj") {
+            outputPath = nil
+            currentView = Views.Process
+        } else {
+            if(outputPath != nil) {
+                currentView = Views.Process
+            } else {
+                disableDestinationSelect = false
+                highlightDestinationSelect = true
+            }
+        }
+    }
     
     var body: some View {
         VStack(alignment: .center) {
@@ -68,6 +87,7 @@ struct InputView: View {
                     panel.canChooseDirectories = true
                     panel.canChooseFiles = false
                     panel.allowsMultipleSelection = false
+                    panel.message = "Choose folder contains image to convert to 3D Object"
                     
                     if panel.runModal() == .OK {
                         self.path = panel.url
@@ -75,20 +95,20 @@ struct InputView: View {
                         
                         print(self.filename)
                         print(self.path ?? "N/A")
-                    }
-                    
-                    Task {
-                        do {
-                            let config = createConfig(sensitivity: sensitivity, ordering: ordering, enableMasking: enableMasking)
-                            
-                            session = try PhotogrammetrySession(input: (path ?? URL(string: "//")!), configuration: config)
-                            
-                            // Switch View to process
-                            currentView = Views.Process
-                        } catch {
-                            print("User creation failed with error: \(error)")
-                            errorMsg = "Session creation failed with error: \(error)"
-                            showingAlert = true
+                        
+                        Task {
+                            do {
+                                let config = createConfig(sensitivity: sensitivity, ordering: ordering, enableMasking: enableMasking)
+                                
+                                session = try PhotogrammetrySession(input: (path ?? URL(string: "//")!), configuration: config)
+                                
+                                // Switch View to process
+                                goProcess()
+                            } catch {
+                                print("User creation failed with error: \(error)")
+                                errorMsg = "Session creation failed with error: \(error)"
+                                showingAlert = true
+                            }
                         }
                     }
                     
@@ -98,7 +118,7 @@ struct InputView: View {
                             .font(.system(size: 100, weight: .light))
                             .font(Font.title.weight(.medium))
                         .padding()
-                        Text("Drag in folder with images to start")
+                        Text("Drop image folder here")
                             .fontWeight(.bold)
                             .foregroundColor(.secondary)
                             .padding([.leading, .bottom, .trailing])
@@ -157,7 +177,7 @@ struct InputView: View {
                                 session = try PhotogrammetrySession(input: (path ?? URL(string: "//")!), configuration: config)
                                 
                                 // Switch View to process
-                                currentView = Views.Process
+                                goProcess()
                             } catch {
                                 print("User creation failed with error: \(error)")
                                 errorMsg = "Session creation failed with error: \(error)"
@@ -178,6 +198,11 @@ struct InputView: View {
                         Text($0)
                     }
                 }
+                Picker("Format", selection: $format) {
+                    ForEach(formats, id: \.self) {
+                        Text($0)
+                    }
+                }
                 
                 Button {
                     showingPopover = true
@@ -190,38 +215,73 @@ struct InputView: View {
                 Spacer()
             }
             ToolbarItem(placement: .automatic) {
-                Button {
-                    let panel = NSOpenPanel()
-                    panel.canChooseDirectories = true
-                    panel.canChooseFiles = false
-                    panel.allowsMultipleSelection = false
-                    
-                    if panel.runModal() == .OK {
-                        self.path = panel.url
-                        self.filename = panel.url?.lastPathComponent ?? "<none>"
+                if(format == ".usdz") {
+                    Button {
+                        let panel = NSOpenPanel()
+                        panel.canChooseDirectories = true
+                        panel.canChooseFiles = false
+                        panel.allowsMultipleSelection = false
+                        panel.message = "Choose folder contains image to convert to 3D Object"
                         
-                        print(self.filename)
-                        print(self.path ?? "N/A")
-                        Task {
-                            do {
-                                let config = createConfig(sensitivity: sensitivity, ordering: ordering, enableMasking: enableMasking)
-                                
-                                session = try PhotogrammetrySession(input: (path ?? URL(string: "//")!), configuration: config)
-                                
-                                // Switch View to process
-                                currentView = Views.Process
-                            } catch {
-                                print("User creation failed with error: \(error)")
-                                errorMsg = "Session creation failed with error: \(error)"
-                                showingAlert = true
+                        if panel.runModal() == .OK {
+                            self.path = panel.url
+                            self.filename = panel.url?.lastPathComponent ?? "<none>"
+                            
+                            print(self.filename)
+                            print(self.path ?? "N/A")
+                            Task {
+                                do {
+                                    let config = createConfig(sensitivity: sensitivity, ordering: ordering, enableMasking: enableMasking)
+                                    
+                                    session = try PhotogrammetrySession(input: (path ?? URL(string: "//")!), configuration: config)
+                                    
+                                    // Switch View to process
+                                    currentView = Views.Process
+                                } catch {
+                                    print("User creation failed with error: \(error)")
+                                    errorMsg = "Session creation failed with error: \(error)"
+                                    showingAlert = true
+                                }
                             }
                         }
-                        
-                        print(self.filename)
-                        print(self.path ?? "N/A")
+                    } label: {
+                        Label("Add Photos", systemImage: "plus")
                     }
-                } label: {
-                    Label("Add Photos", systemImage: "plus")
+                } else {
+                    Button {
+                        if(outputPath == nil) {
+                            let panel = NSOpenPanel()
+                            panel.canCreateDirectories = true
+                            panel.canChooseDirectories = true
+                            panel.canChooseFiles = false
+                            panel.allowsMultipleSelection = false
+                            panel.message = "Select Output Location"
+                            
+                            if panel.runModal() == .OK {
+                                outputPath = panel.url
+                                print(outputPath ?? "No output")
+                                print(filename)
+                                
+                                if(!highlightDestinationSelect) {
+                                    disableDestinationSelect = true
+                                    print("disabled")
+                                } else {
+                                    currentView = Views.Process
+                                }
+                                
+                            }
+                        } else {
+                            
+                        }
+                    } label: {
+                        if highlightDestinationSelect {
+                            Label("Select Destination", systemImage: "arrow.forward.circle.fill")
+                                .foregroundColor(.blue)
+                        } else {
+                            Label("Select Destination", systemImage: "arrow.forward.circle.fill")
+                        }
+                    }
+                    .disabled(disableDestinationSelect)
                 }
             }
         }
@@ -235,7 +295,7 @@ struct InputView: View {
                 dismissButton: .default(Text("Got it!"))
             )
         }
-        .navigationTitle("Object Capture")
-        .frame(minWidth: 300, idealWidth: 500 ,maxWidth:.infinity, minHeight: 300, idealHeight: 500, maxHeight: .infinity)
+        .navigationTitle("Cubic")
+        .frame(minWidth: 300, idealWidth: 400 ,maxWidth:.infinity, minHeight: 500, idealHeight: 500, maxHeight: .infinity)
     }
 }
