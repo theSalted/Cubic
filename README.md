@@ -46,5 +46,5 @@ Voila! You model will generate in the destination you choose after construction 
 | raw              | <30M          | Varies                  |
 
 ## Download
-Download Cubic with [Github Release](https://github.com/theSalted/Cubic/releases/)
+To Download Cubic see [Github Release](https://github.com/theSalted/Cubic/releases/)
 
