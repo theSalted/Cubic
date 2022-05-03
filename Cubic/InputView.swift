@@ -286,6 +286,9 @@ struct InputView: View {
             }
         }
         .onAppear{
+            path = nil
+            outputPath = nil
+            session = nil
             hardwareCheck = supportsObjectCapture()
         }
         .alert(isPresented: $showingAlert) {
