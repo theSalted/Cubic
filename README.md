@@ -1,5 +1,10 @@
+![icon_128x128](https://user-images.githubusercontent.com/30554090/166393145-deb684c1-98a8-4df8-9bc3-527c6369c644.png)
+
 # Cubic
 Cubic Generate 3D model with Images. Utilizing ARKit and Object Capture API, Cubic can reliabily generate models fast. 
+
+<img width="663" alt="image" src="https://user-images.githubusercontent.com/30554090/166393122-d4d0aa3d-c34f-45db-a66f-5fd93e2812c1.png">
+
 
 ## Instructions
 
