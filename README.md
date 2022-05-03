@@ -25,7 +25,7 @@ To generate a OBJ model:
 
 Step 1: Choose the Quality you would like
 
-Step 2: Choose the format to 'Obj'
+Step 2: Set format to 'Obj'
 
 On the top right of Cubic's toolbar, an arrow button will turn blue. Prompting you to select a output destination.
 
