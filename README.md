@@ -44,3 +44,7 @@ Voila! You model will generate in the destination you choose after construction 
 | medium           | <100k         | <30MB                   |
 | full             | <250k         | <100MB                  |
 | raw              | <30M          | Varies                  |
+
+## Download
+Download Cubic with [Github Release](https://github.com/theSalted/Cubic/releases/)
+
