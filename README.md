@@ -51,5 +51,5 @@ Voila! You model will generate in the destination you choose after construction 
 | raw              | <30M          | Varies                  |
 
 ## Download
-To Download Cubic see [Github Release](https://github.com/theSalted/Cubic/releases/)
+Download Cubic at [App Store](https://apps.apple.com/us/app/cubic-photogrammetry/id1632546962?mt=12)
 
